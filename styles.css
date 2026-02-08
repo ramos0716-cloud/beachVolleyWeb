@@ -1,22 +1,175 @@
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  background-color: #f2f2f2;
+  background-color: rgb(0, 0, 0);
 }
 
 header {
-  background-color: #1e90ff;
+  background-color: black;
   color: white;
   padding: 20px;
   text-align: center;
+  border-style: solid;
+  border-color: rgb(0, 255, 0);
+  border-radius: 10px;
+  border-width: 3px;
+  font-size: 30px;
+  font-family: sans-serif;
 }
 
 nav a {
+  background-color: rgb(39, 199, 7);  
+  padding: 10px;
+  border-radius: 10px;
   margin: 10px;
-  color: white;
+  color: black;
   text-decoration: none;
   font-weight: bold;
 }
+
+#inicio {
+  height: 400px;
+  background-image: url('img1.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; 
+  font-size: 20px; 
+  color: #ffffff;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+  border-style: solid;
+  border-color: rgb(39, 199, 7);
+  border-width: 5px;
+  border-radius: 10px;
+}
+
+
+.tips {
+  padding: 0;          
+  display: block;     
+}
+
+
+.hero-card {
+  position: relative;
+  width: 100%;        
+  max-width: 620px; 
+  height: 320px;
+  border-radius: 16px;
+  overflow: hidden;
+  background-image: url("img7.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+
+  border: 3px solid rgb(39, 199, 7); 
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+.hero-card .overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.65), rgba(0,0,0,0.1));
+}
+
+.hero-card .content {
+  position: relative;
+  color: #fff;
+  padding: 24px;
+  max-width: 80%;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.7);
+}
+
+
+.columnas {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero-wrapper {
+  flex: 1.2;
+  display: flex;
+  justify-content: flex-start; 
+}
+
+
+.lista {
+  flex: 1;
+  max-width: 480px;
+  background: #f8fafc;
+  padding: 24px 28px;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+}
+
+.lista h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  color: #0ea5e9;
+}
+
+.lista ul {
+  padding-left: 18px;
+  line-height: 1.6;
+  color: #334155;
+}
+
+.beneficios {
+  padding: 60px 40px;
+  max-width: 1200px;
+  margin: 0 auto 40px;
+
+  
+  background-image: url("img4.jpg");  
+  background-size: cover;
+  background-position: center;
+  border-style: solid;
+  border-color: rgb(39, 199, 7);
+  border-width: 5px;
+
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+
+
+.beneficios h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: rgb(39, 199, 7); /* tu verde */
+  font-size: 2rem;
+}
+
+.beneficios-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.beneficio-card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 16px;
+  border: 2px solid rgb(39, 199, 7);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+}
+
+.beneficio-card h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.beneficio-card p {
+  margin: 0;
+  line-height: 1.6;
+  color: #334155;
+}
+
 
 main {
   padding: 20px;
@@ -24,9 +177,20 @@ main {
 
 section {
   margin-bottom: 30px;
-  background-color: white;
   padding: 15px;
   border-radius: 10px;
+}
+
+#video {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+#video h1 {
+  margin-bottom: 20px;
+  color: rgb(39, 199, 7);
 }
 
 footer {
@@ -35,3 +199,21 @@ footer {
   text-align: center;
   padding: 10px;
 }
+
+footer .volver-arriba {
+  display: inline-block;
+  margin-top: 10px;
+  color: rgb(39, 199, 7);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer .volver-arriba:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+
